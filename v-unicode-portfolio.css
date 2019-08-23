@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.left-page {
+    width: 35%;
+    height: 100vh;
+    background: #000;
+    text-align: center;
+}
+
+.middle-page {
+    height: 100vh;
+    width: 26%;
+    background: #FA8072;
+    float: right;
+}   
+.background {
+    display: flex;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+}
+.left-page a{
+    color: white;
+    font-size: 0.68em;
+    text-decoration: none;
+}
+.left-page a:hover {
+    color:red;
+}
+.left-page p{
+    font-size: 0.75em;
+}
+.logo{
+    color: white;
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing: 8px;
+}
+center i{
+    padding: 19px;
+    font-size: 1.4em;
+    color: white;
+}
+center i:hover {
+    color:red;
+}
+.slidershow {
+    width: 99%;
+    height:50%;
+    overflow:hidden;
+    
+    margin-top: 0%;
+    margin-bottom: 0%;  
+}
+.navigation {
+    position: absolute;
+    bottom: 2.5%;
+    display: flex;
+    left: 77%;
+    bottom: -5%;
+    transform: translateX(-50%);
+}
+
+.bar {
+    width: 45px;
+    height: 8px;
+    border: 2px solid black;
+    margin:6px;
+    cursor:pointer;
+}
+.bar:hover {
+    background-color:yellow;
+}
+input[name="scroll"] {
+    position:absolute;
+    visibility:hidden;
+}
+.multi-slide {
+    margin-bottom: 100%;
+    width:500%;
+    height:100%;
+    display:flex;
+    margin-right: 50%
+}
+.single-slide {
+    width:20%;
+    transition:0.3s;
+    
+}
+.single-slide img {
+    width: 95%;
+    height: 95%;
+    
+}
+#r1:checked ~ .s1 {
+    margin-left: 0;
+}
+#r2:checked ~ .s1 {
+    margin-left: -20%;
+}
+#r3:checked ~ .s1 {
+    margin-left: -40%;
+}
+ul {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-size: 1.19em;
+  }
+  
+  li {
+      
+    float: left;
+  }
+  li a .search{
+      float: right;
+  }
+  
+li a {
+   
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+li a:hover:not(.active) {
+    background-color: #111;
+  }
+.active {
+    background-color: red;
+  }
+  .middle-page {
+      width: 200%;
+      font-size: 1.2em;
+      color:black;
+      text-align: justify;
+  }
+  .middle-page p{
+      font-size: 0.65em;
+      color: black;
+      text-align: center;
+  }
+  @media screen and (max-width:600px)
+  {
+      .background{
+          flex-direction: column;
+      }
+      .left-page, .middle-page, .mid-background   
+      {
+          width:100%;
+          height: 100%;
+          margin-top:5px;
+          
+      }
+  }
